@@ -47,9 +47,9 @@ namespace WP_Provision {
       add_filter( 'plugin_action_links', array( __CLASS__, 'plugin_action_links' ), 10, 2 );
 
       // Settings page.
-      add_options_page( __( 'WP-Provision', WP_Provision_Locale ), __( 'Resize.ly', WP_Provision_Locale ), 'manage_options', 'wp-provision', function () {
-        include( WP_Provision_Path . '/core/ui/wp-provision.php' );
-      } );
+      add_options_page( __( 'Provision', WP_Provision_Locale ), __( 'Provision', WP_Provision_Locale ), 'manage_options', 'wp-provision', function () {
+        include( WP_Provision_Path . '/core/ui/settings.php' );
+      });
 
       //** Make Property Featured Via AJAX */
       if ( isset( $_REQUEST[ '_wpnonce' ] ) ) {

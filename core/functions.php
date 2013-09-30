@@ -1,6 +1,6 @@
 <?php
 /**
- * General Resize.ly Options
+ * General WP-Provision Functions
  *
  * @class Functions
  * @author: potanin@UD
@@ -8,7 +8,7 @@
 namespace WP_Provision {
 
   /**
-   * General Resize.ly Options
+   * General WP-Provision Functions
    *
    * @class Functions
    * @author: potanin@UD
