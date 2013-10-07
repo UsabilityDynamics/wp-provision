@@ -85,7 +85,7 @@ namespace WP_Provision {
 
       // Settings page.
       add_options_page( __( 'Provision', WP_Provision_Locale ), __( 'Provision', WP_Provision_Locale ), 'manage_options', 'wp-provision', function () {
-        include( WP_Provision_Path . '/core/ui/settings.php' );
+        // include( WP_Provision_Path . '/core/ui/settings.php' );
       } );
 
       //** Make Property Featured Via AJAX */
