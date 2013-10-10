@@ -30,4 +30,4 @@
 include_once( __DIR__ . '/lib/class-bootstrap.php' );
 
 // Initialize.
-WP_Provision\Bootstrap();
+new WP_Provision\Bootstrap();
