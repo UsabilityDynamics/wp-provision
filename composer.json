@@ -24,6 +24,8 @@
   "require": {
     "php": ">=5.3"
   },
-  "autoload": {},
+  "autoload": {
+    "files": [ "wp-provision.php" ]
+  },
   "config": {}
 }
