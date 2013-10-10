@@ -51,10 +51,10 @@
   },
   "autoload": {
     "files": [
-      "core/class-bootstrap.php",
-      "core/class-core.php",
-      "core/class-ui.php",
-      "core/class-utility.php"
+      "lib/class-bootstrap.php",
+      "lib/class-core.php",
+      "lib/class-ui.php",
+      "lib/class-utility.php"
     ]
   }
 }
