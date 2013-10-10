@@ -1,0 +1,29 @@
+
+{
+  "name": "usabilitydynamics/wp-provision",
+  "type": "library",
+  "description": "WordPress plugin for provisioning SVN and Git repositories.",
+  "repository": {
+    "type": "git",
+    "urL": "https://github.com/UsabilityDynamics/wp-provision"
+  },
+  "homepage": "https://github.com/UsabilityDynamics/wp-provision",
+  "keywords": [
+    "wordpress",
+    "provision"
+  ],
+  "minimum-stability": "dev",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Andy Potanin",
+      "homepage": "http://usabilitydynamics.com"
+    }
+  ],
+  "repositories": [],
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {},
+  "config": {}
+}
