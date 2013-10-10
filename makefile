@@ -1,25 +1,34 @@
-REPORTER = list
-LIB_COV = static/lib-cov
-JSON_FILE = static/all.json
-HTML_FILE = static/coverage.html
+# Usability Dynamics component build.
+#
+# @author potanin@UD
+# @source https://gist.github.com/andypotanin/084f15057ba01a5cc385
+# @version 0.0.1
 
-test-all: clean document test-code
+test-all:	clean document test-code
+
+install:
+	upm-install
+
+push:
+	yuidoc -q --configfile static/yuidoc.json
+	upm-install
+	upm-build
+	upm-commit
+
+update:
+	upm-udpate
+	upm-build
+	yuidoc -q --configfile static/yuidoc.json
 
 document:
-	yuidoc
+	yuidoc -q --configfile static/yuidoc.json
 
 test-code:
 	@NODE_ENV=test mocha \
   --timeout 200 \
   --ui exports \
-  --reporter $(REPORTER) \
+  --reporter list \
   test/*.js
 
 clean:
-	rm -fr static/assets/*
-	rm -fr static/classes/*
-	rm -fr static/files/*
-	rm -fr static/modules/*
-	rm -f static/api.js
-	rm -f static/data.json
-	rm -f static/index.html
+	rm -fr static/codex/lib-cov

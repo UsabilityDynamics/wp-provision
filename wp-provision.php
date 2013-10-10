@@ -26,32 +26,8 @@
  *
  */
 
-// Plugin Version
-define( 'WP_Provision_Version', '0.1.1' );
+// Include bootstrap.
+include_once( __DIR__ . '/lib/class-bootstrap.php' );
 
-// Path for Includes
-define( 'WP_Provision_Path', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
-
-// Clean directory name
-define( 'WP_Provision_Directory', basename( __DIR__ ) );
-
-// Path for front-end links
-define( 'WP_Provision_URL', untrailingslashit( plugins_url( basename( __DIR__ ) ) ) );
-
-// Locale Name
-define( 'WP_Provision_Locale', WP_Provision_Directory );
-
-/** Loads general functions used by WP-crm */
-include_once WP_Provision_Path . '/core/functions.php';
-
-/** Loads all the metaboxes for the crm page */
-include_once WP_Provision_Path . '/core/core.php';
-
-// Register activation hook.
-register_activation_hook( __FILE__, array( 'WP_Provision\Functions', 'activation' ) );
-
-// Register activation hook.
-register_deactivation_hook( __FILE__, array( 'WP_Provision\Functions', 'deactivation' ) );
-
-// Initiate the plugin.
-add_action( 'plugins_loaded', create_function( '', 'new WP_Provision\Core;' ) );
+// Initialize.
+WP_Provision\Bootstrap();

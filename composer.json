@@ -20,12 +20,41 @@
       "homepage": "http://usabilitydynamics.com"
     }
   ],
-  "repositories": [],
+  "repositories": [
+    {
+      "type": "svn",
+      "url": "https://github.com/UsabilityDynamics/lib-utility",
+      "trunk-path": "trunk",
+      "branches-path": "branches",
+      "tags-path": "tags"
+    },
+    {
+      "type": "svn",
+      "url": "https://github.com/UsabilityDynamics/lib-settings",
+      "trunk-path": "trunk",
+      "branches-path": "branches",
+      "tags-path": "tags"
+    },
+    {
+      "type": "svn",
+      "url": "https://github.com/UsabilityDynamics/lib-ui",
+      "trunk-path": "trunk",
+      "branches-path": "branches",
+      "tags-path": "tags"
+    }
+  ],
   "require": {
-    "php": ">=5.3"
+    "php": ">=5.3",
+    "UsabilityDynamics/lib-utility": "*",
+    "UsabilityDynamics/lib-settings": "*",
+    "UsabilityDynamics/lib-ui": "*"
   },
   "autoload": {
-    "files": [ "wp-provision.php" ]
-  },
-  "config": {}
+    "files": [
+      "core/class-bootstrap.php",
+      "core/class-core.php",
+      "core/class-ui.php",
+      "core/class-utility.php"
+    ]
+  }
 }
