@@ -20,7 +20,7 @@
     }
   ],
   "require": {
-    "php": ">=5.3",c
+    "php": ">=5.3",
     "UsabilityDynamics/lib-utility": "*",
     "UsabilityDynamics/lib-settings": "*",
     "UsabilityDynamics/lib-ui": "*"
