@@ -30,4 +30,4 @@
 include_once( __DIR__ . '/lib/class-bootstrap.php' );
 
 // Initialize.
-new WP_Provision\Bootstrap();
+new UsabilityDynamics\Provision\Bootstrap();

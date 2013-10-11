@@ -5,7 +5,7 @@
  * @class Utility
  * @author: potanin@UD
  */
-namespace WP_Provision {
+namespace UsabilityDynamics\Provision {
 
   /**
    * General WP-Provision Utility

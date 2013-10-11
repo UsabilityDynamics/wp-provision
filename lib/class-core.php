@@ -6,7 +6,7 @@
  * @namespace WP_Provision
  * @author: potanin@UD
  */
-namespace WP_Provision {
+namespace UsabilityDynamics\Provision {
 
   /**
    * -

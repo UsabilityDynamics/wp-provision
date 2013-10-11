@@ -5,7 +5,7 @@
  * @class Settings
  * @author: potanin@UD
  */
-namespace WP_Provision {
+namespace UsabilityDynamics\Provision {
 
   /**
    * General WP-Provision Settings
@@ -13,6 +13,6 @@ namespace WP_Provision {
    * @class Settings
    * @author: potanin@UD
    */
-  class Settings extends UsabilityDynamics\Settings {}
+  class Settings {}
 
 }

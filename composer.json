@@ -19,51 +19,19 @@
       "homepage": "http://usabilitydynamics.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "svn",
-      "url": "https://github.com/UsabilityDynamics/lib-utility",
-      "trunk-path": "trunk",
-      "branches-path": "branches",
-      "tags-path": "tags"
-    },
-    {
-      "type": "svn",
-      "url": "https://github.com/UsabilityDynamics/lib-settings",
-      "trunk-path": "trunk",
-      "branches-path": "branches",
-      "tags-path": "tags"
-    },
-    {
-      "type": "svn",
-      "url": "https://github.com/UsabilityDynamics/lib-ui",
-      "trunk-path": "trunk",
-      "branches-path": "branches",
-      "tags-path": "tags"
-    }
-  ],
   "require": {
-    "php": ">=5.3",
+    "php": ">=5.3",c
     "UsabilityDynamics/lib-utility": "*",
     "UsabilityDynamics/lib-settings": "*",
     "UsabilityDynamics/lib-ui": "*"
   },
   "autoload": {
     "files": [
-      "lib/class-api.php",
       "lib/class-bootstrap.php",
-      "lib/class-dashboard.php",
-      "lib/class-debug.php",
-      "lib/class-developer.php",
-      "lib/class-image.php",
-      "lib/class-locale.php",
-      "lib/class-log.php",
-      "lib/class-media.php",
-      "lib/class-security.php",
+      "lib/class-core.php",
       "lib/class-settings.php",
-      "lib/class-theme.php",
-      "lib/class-utility.php",
-      "lib/class-views.php"
+      "lib/class-ui.php",
+      "lib/class-utility.php"
     ]
   }
 }

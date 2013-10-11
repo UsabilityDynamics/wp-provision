@@ -6,7 +6,7 @@
  * @namespace WP_Provision
  * @author: potanin@UD
  */
-namespace WP_Provision {
+namespace UsabilityDynamics\Provision {
 
   /**
    * Bootstrap the plugin in WordPress.
@@ -24,7 +24,7 @@ namespace WP_Provision {
      * @property $instance
      * @type {Object}
      */
-    public static $instance = undefined;
+    public static $instance = false;
 
     /**
      * Core constructor.
